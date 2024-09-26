@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=100&id=7hdbWLtzjteP&format=png&color=000000"
+      type="image/x-icon"
+    />
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <h1>QR Code Generator</h1>
+        <h3>Enter text to create QR Code</h3>
+        <input type="text" name="txt" id="txt" placeholder="Enter Here" />
+        <button id="btn">Generate QR Code</button>
+        <div class="spinner hide"></div>
+
+        <div class="qr hide">
+          <img
+            class="image"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=Saad"
+            alt="QR"
+          />
+          <button id="down">Download</button>
+          <button id="copy">Copy</button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
